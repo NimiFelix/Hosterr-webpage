@@ -1,0 +1,517 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+:root{
+    --beige:#f9f4e8;
+    --blue:#4977ea;
+    --grey:#696864;
+}
+@font-face {
+    font-family: lato;
+    src: url(./Lato/Lato-Regular.ttf);
+}
+/*font-family: 'Playfair Display', serif;*/
+body{
+    background-color:var(--beige);
+}
+.navigation{
+    padding-top:1em;
+    width:90%;
+    margin:0 auto;
+    display:flex;
+    justify-content:space-between;
+
+}
+.nav-links, .nav-buttons{
+    display:none;
+}
+.nav-links a:hover:active{
+    opacity:0.2;
+}
+ .nav-buttons a:hover:active{
+    opacity:0.2;
+}
+.company-logo{
+    display:flex;
+    /* justify-content: space-between; */
+    align-items:center;
+}
+.logo{
+    max-width:5rem;
+}
+.logo-btn{
+    text-decoration:none;
+    font-family:lato;
+    font-size:.65rem;
+    border: 1px solid black;
+    padding:6px 9px;
+    border-radius:50rem;
+    margin-left:1em;
+    background: hsla(29, 92%, 70%, 1);
+    background: linear-gradient(60deg, hsla(29, 92%, 70%, 1) 0%, rgb(243, 78, 78) 100%);
+    background: -moz-linear-gradient(60deg, hsla(29, 92%, 70%, 1) 0%, rgb(243, 76, 76) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(29, 92%, 70%, 1) 0%, rgb(246, 75, 75) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F9B16E", endColorstr="#F68080", GradientType=1 );
+    color:white;
+    border:none;
+}
+.hamburger{
+    width:2rem;
+    cursor:pointer;
+
+}
+
+/* main-styles */
+main{
+    margin-top:2em;
+}
+.main-content{
+    /* position:relative; */
+}
+.main-img{
+    max-width:100%;
+    height:auto;
+    position:relative;
+    margin-top:3em;
+    margin-bottom:3em;
+}
+.main-img img{
+    width:65%;
+    margin-bottom:3rem;
+    max-width:100%;
+    height:auto;
+}
+.blue{
+    position:absolute;
+    top:-11em;
+    left:2.5em;
+    transform:rotate(-40deg);
+}   
+.pink{
+    position:absolute;
+    transform:rotate(-25deg);
+    top:-11em;
+    left:2.5em;
+}
+.purple{
+    position:absolute;
+    transform:rotate(-10deg);
+    top:-11em;
+    left:2.5em;
+}
+.model{
+    position:absolute;
+    transform:rotate(5deg);
+    top:-11em;
+    left:2.5em;
+}
+
+.main-content{
+    width:90%;
+    margin:0 auto;
+    font-family:lato;
+}
+
+.Hosterr-info h1{
+    font-size:1.9rem;
+    width:70%;
+    margin-top:8em;
+    font-family: 'Playfair Display', serif;
+    font-weight:bolder;
+    line-height:2.3rem;
+}
+.h1::before{
+    content:"\a\a\a";
+    white-space:pre;
+}
+.Hosterr-info p{
+    font-size:.9rem;
+    line-height:1.2rem;
+    margin:.8rem 0rem;
+    color:var(--grey);
+    line-height:1.4rem;
+}
+.registration input{
+    width:100%;
+    padding:1em;
+    border:none;
+    border-radius:5px;
+}
+.btn,.fade{
+    margin:1em 0em;
+    width:100%;
+    padding:1.2em;
+    border:none;
+    background-color:var(--blue);
+    color:white;
+    border-radius:4px;
+    cursor:pointer;
+    font-family:lato;
+    font-size:.9rem;
+}
+.fade:hover:active{
+    opacity:.4
+}
+.check{
+    width:5.8%;
+}
+.flex{
+    display:flex;
+}
+.span{
+    margin-left:.6em;
+    font-size:.92rem;
+    color:var(--grey);
+}
+
+/* footer-styles */
+footer{
+    width:90%;
+    margin:0 auto;
+    font-family:lato;
+}
+.footer-links{
+    margin:2em 0em;
+}
+.footer-links a{
+    text-decoration:none;
+    font-size:.9rem;
+    color:black;
+    cursor:pointer;
+    color:var(--grey);
+}
+.footer-links a:hover:active{
+    opacity:.6;
+}
+.a + .a{
+    margin-left:.6em;
+}
+
+.enquiry{
+    display:flex;
+}
+.enquiry img{
+    width:11%;
+}
+.enquiry p{
+    margin-left:.7em;
+    font-size:1rem;
+    font-family: 'Playfair Display', serif;
+}
+.enquiry strong{
+    font-family:lato;
+}
+
+@media (min-width:390px){
+    .main-img img{
+        width:55%;
+
+    }
+    .main-img{
+        max-width:90%;
+        height:auto;
+        margin-left:2em;
+    }
+}
+
+@media (min-width:600px){
+    .navigation{
+        padding-top:2em;
+    
+    }
+    .logo{
+        max-width:6rem;
+    }
+    .logo-btn{
+        font-size:.70rem;
+    }
+    .hamburger{
+        width:3.3rem;
+    }
+    .blue{
+        top:-1em;
+    }   
+    .pink{
+        top:-1em;
+    }
+    .purple{
+        top:-1em;
+    }
+    .model{
+        top:-1em;
+    }
+    .main-img{
+        margin-top:4em;
+        margin-left:9rem;
+    }
+    .h1::before{
+        content:"\a\a\a\a\a";
+        white-space:pre;
+    }
+    .Hosterr-info h1{
+        font-size:4rem;
+        width:98%;
+        margin:0 auto;
+        line-height:4.5rem;
+    }
+    .Hosterr-info p{
+        font-size:1.2rem;
+        line-height:1.2rem;
+        margin:.8rem 0rem;
+        color:var(--grey);
+        line-height:1.9rem;
+    }
+    .registration{
+        display:flex;
+    }
+    .registration input{
+        width:50%;
+        padding:0rem 1rem;
+
+    }
+    .btn.fade{
+        margin:1em 0em;
+        width:30%;
+        padding:1em .8em;
+        font-size:1rem;
+        margin-left:1em;
+    }
+    .flex{
+        margin-top:2em;
+    }
+    .check{
+        width:4%;
+    }
+    span{
+        align-self:center;
+    }
+    .footer{
+        margin-top:2em;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .footer-links a{
+        text-decoration:none;
+        font-size:1.1rem;
+    }
+    .enquiry{
+        width:35%;
+    }
+    .enquiry img{
+        width:15%;
+    }
+    .enquiry p{
+        font-size:1.19rem;
+    }
+}
+@media(min-width:900px){
+    .nav-links, .nav-buttons{
+        display:block;
+    }
+    .hamburger{
+        display:none;
+    }
+    .nav-links a, 
+    .nav-buttons a{
+        text-decoration:none;
+        color:var(--grey);
+        align-self:center;
+    }
+    .nav-links a{
+        margin-left:.8em;
+    }
+    .nav-links{
+        margin-top:1em;
+    }
+    .nav-buttons a{
+        margin-right:.9em;
+    }
+    .nav-buttons{
+        display:flex;
+        align-items:center;
+    }
+    .clear{
+        padding:.6rem;
+        background-color:var(--blue);
+        color:white;
+        border-radius:4px;
+        cursor:pointer;
+        font-family:lato;
+        font-size:.9rem; 
+        border:none;
+    }
+    .clear:hover:active{
+        opacity:0.4;
+    }
+    .main-content{
+        display:flex;
+        flex-direction:row-reverse;
+    }
+    .main-img{
+        display:block;
+        width:80%;
+    }
+    .Hosterr-info{
+        margin-top:5.5em;
+    }
+    .h1::before{
+        white-space:nowrap;
+    }
+    .main-img img{
+        margin-top:3em;
+        width:95%;
+    }
+    .Hosterr-info h1{
+        font-size:3.3rem;
+        width:100%;
+        line-height:4rem;
+    }
+    .Hosterr-info p{
+        font-size:1.2rem;
+        line-height:1.6rem;
+    }
+    .btn ,.fade{
+        padding:0em 1.5em;
+        width:100%;
+    }
+    .input{
+        margin:.9em;
+        font-size:.9rem;
+        padding-left:1em;
+        padding:0em 1em;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+    }
+    
+    .footer{
+        margin-top:6em;
+    }
+    .enquiry{
+        width:28%;
+      
+    }
+    .enquiry img{
+        width:15%;
+        margin:0 0 0 auto;
+    }
+    .enquiry p{
+        font-size:1.12rem;
+    }
+    
+   
+
+}
+@media(min-width:1200px){
+    .main-img img{
+        margin-top:3em;
+        width:80%;
+    }
+    body{
+        width:95%;
+        margin:0 auto;
+        max-width:1300px;
+    }
+    .Hosterr-info{
+        margin-top:6em;
+    }
+    .footer{
+        margin-top:7em;
+    }
+}
+/* 
+.navigation{
+        padding-top:2em;
+    
+    }
+    .logo{
+        max-width:6rem;
+    }
+    .logo-btn{
+        font-size:.70rem;
+    }
+    .hamburger{
+        width:3.3rem;
+    }
+    .blue{
+        top:-1em;
+    }   
+    .pink{
+        top:-1em;
+    }
+    .purple{
+        top:-1em;
+    }
+    .model{
+        top:-1em;
+    }
+    .main-img{
+        margin-top:4em;
+        margin-left:9rem;
+    }
+    .h1::before{
+        content:"\a\a\a";
+        white-space:pre;
+    }
+    .Hosterr-info h1{
+        font-size:4rem;
+        width:98%;
+        margin:0 auto;
+        line-height:4.5rem;
+    }
+    .Hosterr-info p{
+        font-size:1.3rem;
+        line-height:1.2rem;
+        margin:.8rem 0rem;
+        color:var(--grey);
+        line-height:1.9rem;
+    }
+    .registration{
+        display:flex;
+    }
+    .registration input{
+        width:50%;
+        padding:0rem 0rem;
+
+    }
+    input::placeholder{
+        margin-left:2em;
+
+    }
+    .registration button{
+        margin:1em 0em;
+        width:20%;
+        padding:1.2em 0em;
+        font-size:1rem;
+        margin-left:1em;
+    }
+    .flex{
+        margin-top:2em;
+    }
+    .check{
+        width:4%;
+    }
+    span{
+        align-self:center;
+    }
+    .footer{
+        margin-top:2em;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .footer-links a{
+        text-decoration:none;
+        font-size:1.1rem;
+    }
+    .enquiry{
+        width:35%;
+    }
+    .enquiry img{
+        width:17%;
+    }
+    .enquiry p{
+        font-size:1.19rem;
+ */
